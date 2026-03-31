@@ -7,11 +7,18 @@ Debe implementar:
 - suma_recursiva(n)
 """
 
-def suma_ciclo(n):
+def suma_ciclo(num):
     """
     Retorna la suma de los primeros n números usando un ciclo.
     """
-    pass
+    numero = 1 
+    suma_numeros = 0
+    while numero <= num:
+        numero = numero + 1
+        suma_numeros = suma_numeros + numero
+    return suma_numeros
+
+
 
 
 def suma_recursiva(n):
@@ -22,3 +29,11 @@ def suma_recursiva(n):
         return 1
     else:
         return n + suma_recursiva(n -1)    
+
+# def suma_ciclo
+num = int(input("Ingrese un numero entero positivo: "))
+print(suma_ciclo(num))
+
+#def suma recursiva
+n = int(input("ingrese valor de N: "))
+print(suma_recursiva())
