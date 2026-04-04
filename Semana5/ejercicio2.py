@@ -36,4 +36,4 @@ print(suma_ciclo(num))
 
 #def suma recursiva
 n = int(input("ingrese valor de N: "))
-print(suma_recursiva())
+print(suma_recursiva(num))
